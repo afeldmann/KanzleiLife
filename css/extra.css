@@ -1,0 +1,161 @@
+
+/* Achim: Logo im Kopf */
+#idLogo {
+	position:relative;
+	display:block;
+	padding:5px;
+	margin:2px;
+}
+#idLogo img {
+	height: 70px;
+}
+#idMenu {
+	display:inline-block;
+}
+#idMenu img {
+	height:70px;
+}
+
+#idMenuListe {
+	display:none;
+	position:absolute;
+	top:0px;
+	left:0px;
+	background-color: #ffffff;
+	margin:0px;
+	padding:10px;
+	margin-left:-30px;
+	height:100%;
+	z-index:99;
+}
+#idMenuListe ul {
+	list-style-type:none;
+}
+#idMenuListe li {
+	margin:5px;
+	padding:5px;
+}
+#idMenuListe li:hover, #idMenuListe li:focus {
+	background-color: #eeeeee;
+	margin:5px;
+	padding:5px;
+	transition: background-color 0.01s;
+	cursor:pointer;
+}
+
+#idSieSindHier {
+	display:inherit;
+	background-color: #dadada;
+	padding:5px;
+	cursor:pointer;
+}
+
+#idFoot{
+	position: relative;
+	display: block;
+	background-color: #ffffff;
+	padding:5px;
+	margin:2px;
+	text-align:right;
+}
+
+#idListe {
+	/*
+	position:fixed;
+	top: 18%;
+	left:0px;
+	padding:5px;
+	margin:2px;
+	overflow-y:auto;
+	height: 82%;*/
+}
+
+/* Portrait layout (default) */
+.app {
+    left:0px;
+    top:100px;
+    height:auto;
+    width:auto;                   
+    text-align:left;
+    padding: 5px; 
+    margin: 10px;  
+}
+/* Landscape layout (with min-width) */
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+    .app {
+		left:0px;
+		top:100px;
+		height:auto;
+		width:auto;                   
+		text-align:left;
+		padding: 5px; 
+		margin: 10px;  
+    }
+}
+
+.event.listening {
+    display:none;
+}
+
+.event.received {
+    display:none;
+}
+
+p {
+	padding:5px;
+	margin:5px;
+	text-align: justify;
+}
+
+h1 {
+    font-size:24px;
+    font-weight:normal;
+    overflow:visible;
+}
+
+h2 {
+    font-size:20px;
+    font-weight:normal;
+    overflow:visible;
+}
+
+h3 {
+    font-size:16px;
+    font-weight:normal;
+    overflow:visible;
+}
+
+a:hover {
+	cursor:pointer;
+}
+
+.bild {
+	width: 32%;
+	margin: 1px;
+	padding: 2px;
+}
+.rahmen {
+	position:relative;
+	float:left;
+	color: white;
+	background-color: black;
+	margin:2px;
+	padding:0px;
+	margin-top:10px;
+	text-align:center;
+	white-space: normal;
+	width: 240px;
+	height: 210px;
+	min-width: 200px;
+	min-height: 120px;
+}
+.rahmen img {
+	min-width: 200px;
+	min-height: 120px;
+	width: 240px;
+	margin:0px;
+	padding:0px;
+}
+.rahmen:hover {
+	cursor:pointer;
+}
